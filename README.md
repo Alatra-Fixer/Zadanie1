@@ -1,16 +1,5 @@
----
 
-## 1. Plik `Dockerfile`
-
-Użyto wieloetapowego budowania obrazu Dockera:
-
-* **Etap 1:** kompilacja kodu Rust (`cargo build --release`).
-* **Etap 2:** lekki finalny obraz z `debian:bullseye-slim` (dla HTTPS).
-* Dodano **healthcheck**, ekspozycję portu `8080`, oraz metadane autora zgodne ze specyfikacją OCI.
-
----
-
-## 2. Obsługa projektu – polecenia
+## Obsługa projektu – polecenia
 
 ### a. Budowanie obrazu Dockera:
 
